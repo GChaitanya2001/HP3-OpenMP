@@ -1,0 +1,26 @@
+#########################################################################################################################
+
+System Specifications:
+	CPU   : Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+	Cores : 2 CPU x 8 Core x 2 threads
+	RAM   : 256 GB
+	OS    : CentOS Linux release 7.4.1708 (Core)
+	GPU 3D controller card : NVIDIA GK110BGL [Tesla K40c] 2880 cores
+	Processor core clock: 745 MHz
+
+Scalability:
+1) We are reporting the wall time taken (in seconds) for each value of numthreads, for 720000 
+   simulation steps, (1000 bodies)
+        --------------------------------------------------------------------------------------------------------------
+		| Metric \ numthreads |          1**         |           2**      |          4           |        8          |
+		--------------------------------------------------------------------------------------------------------------
+		|     Total time      |   43435.4 (12.07hr)  |  35983.44 (9.99hr) |   21377.3 (5.94 hr)  |  12329.3 (3.42hr) |
+		--------------------------------------------------------------------------------------------------------------
+		|   Avg. time / step  |        0.060327      |        0.049977    |        0.029691      |	    0.017124     |
+		--------------------------------------------------------------------------------------------------------------
+		|      SpeedUp*       |           1          |          1.21      |         2.03         |	      3.52       |
+		--------------------------------------------------------------------------------------------------------------
+
+		* With respect to 1 thread simulation
+		** We calculated Avg. time / step  by running for 1000 steps, as our simulation is still going on, so we estimated the total time for 720k simulation steps using this average value (Please check drive link mentioned in ReadMe.pdf 720k simulation for numthreads = {1, 2}).
+##########################################################################################################################

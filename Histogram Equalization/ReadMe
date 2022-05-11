@@ -1,0 +1,17 @@
+###################### INSTRUCTIONS TO RUN CODE #########################
+
+1) The code uses libpng library for reading and writing images. 
+   Ensure libpng is installed before running the code. If not 
+   installed, 
+   > For Ubuntu, use 'sudo apt-get install libpng-dev'
+   > Otherwise, refer this: http://www.libpng.org/pub/png/libpng.html
+
+ 2) Run the following commands,
+
+    >   g++ <cpp_file_path> -lpng -fopenmp
+    Ex: g++ histogram_eq.cpp -lpng -fopenmp
+
+    >  ./a.out <input_image_path> <output_image_path> <num_threads>
+    Ex: ./a.out sample1.png output1.png 2
+
+    

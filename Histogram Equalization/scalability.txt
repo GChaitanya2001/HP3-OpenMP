@@ -1,0 +1,15 @@
+> Configuration:
+  OS                      :  Ubuntu (64-bit) Virtual Machine (Oracle Virtual Box for Windows)
+  VM Cores info           :  VM is set to use 4 CPUs(Logical Processors)
+  Actual processor info   :  Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, 1800 Mhz, 4 Core(s), 8 Logical Processors
+
+> Execution time for Histogram Equalization (excluding time for reading and writing image),
+  Note: The values rounded off to 2 decimals.
+  
+		--------------------------------------------------
+		| Image \ nthreads |    1   |    2    |     4    |
+		--------------------------------------------------
+		|     Sample 1     |  1.67  |  0.84   |   0.43   |
+		|     Sample 2     |  3.24  |  1.64   |   0.88   |
+		|     Sample 3     |  2.86  |  1.44   |   0.73   |
+		--------------------------------------------------
